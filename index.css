@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
+body{
+    margin: 0px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid black;
+    height: 70vh;
+    color: white;
+    background-color: #000;
+}
+h1{
+    font-size: 3rem;
+}
+nav{
+    margin-top: -30px;
+
+}
+a{
+    text-decoration: none;
+
+}
+nav a {
+    color:rgb(117, 117, 117);
+    font-size: 1.8rem;
+    transition: 0.8s;
+    padding: 10px;
+}
+
+nav a:hover{   
+    color: #AED4E6;
+    
+}
+
+.logo{
+    width: 380px;
+}
+h2{
+    font-size: 3rem;
+    margin-top: -30px;
+}
+#about{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    height: auto;
+    padding: 30px;
+
+
+}
+.border{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border: rgba(117, 117, 117,0.20) solid 1px;
+}
+.cont{
+    width: 45%;
+}
+#about p{
+    margin-top: -30px;
+}
+.right{
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+}
+.htx{
+    border: #AED4E6 solid 5px;
+    background-image: url('./houston.jpg');
+    background-position: center;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 8px;
+}
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    padding: 30px;
+    flex-direction: column;
+}
+.card-cont{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    font-size: 2rem;
+}
+.card-cont p{
+    padding: 30px;
+    font-size: 1.4rem;
+    font-weight:600;
+}
+
+#projects h2{
+    text-align: center;
+}
+.cardOne{
+    border-radius: 8px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #AED4E6;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 0px 15px black;
+}
+.bg-img{
+
+    background-image: url('./bgimg.PNG');
+    width: 80%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    border: solid white 5px;
+}
+
+
+
+.cardTwo{
+    border-radius: 8px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #AED4E6;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 0px 15px black;
+}
+.bg-img2{
+
+    background-image: url('./bgimg2.PNG');
+    width: 80%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    border: solid white 5px;
+
+}
+
+.card-cont a{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: white solid 3px;
+    padding: 7px;
+    border-radius: 8px;
+    background-color: #000;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+.card-cont a:hover{
+    background-color: white;
+    color: black;
+    border: solid black 3px;
+}
+
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    flex-direction: column;
+}
+#contact img{
+    width: 40px;
+    transition: 0.5s;
+    filter: opacity(70%);
+}
+#contact img:hover{
+    filter: opacity(100%);
+
+}
+.contactNav{
+
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media(max-width:800px){
+    #about{
+        flex-direction: column;
+    }
+    .cont{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .htx{
+        display: none;
+    }
+    .card-cont{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardOne{
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .cardTwo{
+        width: 90%;
+    }
+}
